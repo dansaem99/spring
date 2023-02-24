@@ -1,0 +1,9 @@
+<%@ page language='java' contentType='text/html; charset=utf-8' pageEncoding='utf-8'%>
+<a href='main.html'>메인</a><br>
+<%
+	Cookie cookie = new Cookie("age", "");
+	//지우는 코드
+	cookie.setMaxAge(0);
+	
+	response.addCookie(cookie);
+%>
